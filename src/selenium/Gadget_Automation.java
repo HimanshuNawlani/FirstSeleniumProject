@@ -53,6 +53,7 @@ public class Gadget_Automation {
 		//configure the browser
 		if(browser.equalsIgnoreCase("chrome")){
 			System.setProperty("chrome_driver","chromeDriverLocation");
+			System.out.println("new branch is created");
 		     driver=new ChromeDriver(); //To open in Chrome
 		}else if(browser.equalsIgnoreCase("gecko")){
 				System.setProperty("gecko_driver","geckoDriverLocation");
@@ -73,7 +74,7 @@ public class Gadget_Automation {
 		driver.get(url);
 	}
 	public void search() {
-		//2.Enter ìBluetooth headphoneî in search textbox  
+		//2.Enter ‚ÄúBluetooth headphone‚Äù in search textbox  
 		driver.findElement(By.name("keyword")).sendKeys("Bluetooth headphones");
 		//3.Click search button
 				driver.findElement(By.className("searchTextSpan")).click();
