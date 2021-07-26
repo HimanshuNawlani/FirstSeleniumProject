@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Testing on Chrome Browser(failed)">
+    <classes>
+      <class name="selenium.Gadget_Automation">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="GadgetAutomation"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- selenium.Gadget_Automation -->
+    </classes>
+  </test> <!-- Testing on Chrome Browser(failed) -->
+</suite> <!-- Failed suite [Suite] -->
